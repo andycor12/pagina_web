@@ -1,0 +1,286 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FACTURA</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    
+</head>
+<body>
+<nav class="navbar navbar-expand-md bg-danger navbar-dark navbar-collapse justify-content-end">
+    <ul class="navbar-nav">
+    <li class="nav-item active">
+     <a href="sesion.html" class="nav-link"><img src="../icono/usu.png" width="30" class="img-fluid" alt="Responsive image">Iniciar Sesión</a>
+      </li>
+	  <li class="nav-item active">
+     <a href="Registrer.html" class="nav-link"><img src="../icono/registro.png" width="30" class="img-fluid" alt="Responsive image">Registro</a>
+     </li>
+	  </ul>
+</nav>
+
+
+
+<nav class="navbar navbar-expand-md navbar-light bg-light">
+  <a class="col-sm-12 d-flex justify-content-center">
+     <img src="../img/logo.png" width="430" height="230" class="img-fluid" alt="Responsive image">
+  </a>
+</nav>
+<nav class="navbar navbar-expand-md bg-danger navbar-dark">
+ 
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="navbar-collapse collapse justify-content-center order-2" id="collapsibleNavbar">
+     <ul class="navbar-nav">
+     <li class="nav-item active">
+        <a class="nav-link" href="../index.html"><img src="../icono/casita.png" width="30" class="img-fluid" alt="Responsive image">Menu</a>
+      </li>
+       <li class="nav-item active">
+        <a class="nav-link" href="Gestion.html"><img src="../icono/gestion.png" width="30" class="img-fluid" alt="Responsive image">Gestion Farmaceutica</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="productos.html"><img src="../icono/producto.png" width="30" class="img-fluid" alt="Responsive image">Productos</a>
+      </li>
+     <li class="nav-item active">
+        <a class="nav-link" href="pedido.html"><img src="../icono/pedido.png" width="30" class="img-fluid" alt="Responsive image">Pedidos</a>
+      </li> 
+      <li class="nav-item active">
+        <a class="nav-link" href="Catalogo.html"><img src="../icono/catalogo.png" width="30" class="img-fluid" alt="Responsive image">Catalogo</a>
+      </li> 
+        <li class="nav-item active">
+        <a class="nav-link" href="factura.html"><img src="../icono/factura.png" width="25" class="img-fluid" alt="Responsive image">Factura</a>
+      </li>   
+       <li class="nav-item active">
+        <a class="nav-link" href="contactos.html"><img src="../icono/contacto.png" width="30" class="img-fluid" alt="Responsive image">Contactos</a>
+      </li>   
+      <li class="nav-item active">
+        <a class="nav-link" href="chat.html"><img src="../icono/avion.png" width="30" class="img-fluid" alt="Responsive image">Chats</a>
+      </li>  
+    </ul>
+  </div>  
+</nav>
+<br>
+
+<div class="container">
+  <div class="row">
+  
+   <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-3 ">  
+     <a href="" class="btn btn-primary btn-lg">Editar</a>
+</div>
+<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4  ">  
+      <a href="" class="btn btn-primary btn-lg">Imprimir</a>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-5 "> 
+       <a href="" class="btn btn-primary btn-lg">Cancelar</a>
+ </div>
+  </div>
+</div>
+<br>
+ <div class="container">
+              <div class="row">
+            <br>
+      <div class="col-xl-12  col-lg-12 col-md-12 col-sm-12 col-12 bg-primary">
+       <br>
+         <h1 class="row justify-content-center h-80 text-light"> Factura ordinaria:</h1>
+          <form>
+          <div class="form-row">
+
+           <div class="form-group col-md-4">
+                 <label for="Serie/Numero" class="text-light font-weight-bold ">Serie/Numero</label>
+              <select name="Serie/Numero:" id="Serie/Numero:" class="form-control  font-weight-bold "  size="3">
+                    <option value="" class="font-weight-bold " >Seleccione</option>
+                    <option value="value" class="font-weight-bold " >FAC</option>
+			        <option value="value" class="font-weight-bold " >Solicitud</option> 
+                </select>
+            </div>
+
+             <div class="form-group col-md-4">
+               <label for="Numerodefactura" class="text-light font-weight-bold ">Numero de factura</label>
+                <input type="text" name="Numerodefactura"  class="form-control  font-weight-bold ">
+            </div>
+
+
+             <div class="form-group col-md-4">
+                <label for="Cliente" class="text-light font-weight-bold ">Cliente:</label>
+                <input type="text" name="Cliente"  class="form-control  font-weight-bold ">
+            </div>
+
+             <div class="form-group col-md-4">
+                <label for="Forma de pago" class="text-light font-weight-bold ">Forma de pago</label>
+                 <select name="Serie/Numero:" id="Serie/Numero:" class="form-control  font-weight-bold "  size="2">
+                    <option value="" class="font-weight-bold " >Seleccione</option>
+                    <option value="value" class="font-weight-bold ">EFECTIVO</option>
+                    <option value="value" class="font-weight-bold ">TARJETA DE CRETIDO</option>
+                    <option value="value" class="font-weight-bold ">GIRO</option>
+                </select>
+            </div>
+
+            <div class="form-group col-md-4">
+                <label for="Serie/Numero" class="text-light font-weight-bold ">Tipo de documento</label>
+                 <select name="Serie/Numero:" id="Serie/Numero:" class="form-control  font-weight-bold "  size="2">
+                    <option value="" class="font-weight-bold " >Seleccione</option>
+                    <option value="value" class="font-weight-bold " >CEDULA CIUDADANIA</option>
+			        <option value="value" class="font-weight-bold " >TARJETA IDENTIDAD</option> 
+                </select>
+            </div>
+
+
+                 <div class="form-group col-md-4">
+                <label for="Numero de documento" class="text-light font-weight-bold ">Numero de documento</label>
+                <input type="text" name="Numero de documento"  class="form-control  font-weight-bold ">
+            </div>
+
+
+            <div class="form-group col-md-4">
+                <label for="Nombre del producto" class="text-light font-weight-bold ">Nombre del producto</label>
+                <input type="text" name="Nombre del producto"  class="form-control  font-weight-bold ">
+            </div>
+
+            
+                 <div class="form-group col-md-4">
+                <label for="Codigo del producto" class="text-light font-weight-bold ">Codigo del producto</label>
+                <input type="text" name="Codigo del producto"  class="form-control  font-weight-bold ">
+            
+            </div>
+
+               <div class="form-group col-md-4">
+             <div class="radio">
+             
+             <label for="Sujeto" class="text-light font-weight-bold ">Sujeto de IVA</label><br>
+             <input type="radio" name="optradio" checked><label for="Sujeto" class="text-light font-weight-bold ">Si</label>
+             <input type="radio" name="optradio"><label for="Sujeto" class="text-light font-weight-bold ">No</label>
+             </div>
+             </div>
+
+
+           <div class="form-group col-md-4">
+                <label for="fecha" class="text-light font-weight-bold ">Fecha</label>
+                <input type='date' class="form-control  font-weight-bold " />
+                   
+            </div>
+               <div class="form-group col-md-4">
+                <label for="Estado" class="text-light font-weight-bold " >Estado</label>
+                <br>
+                <select name="Serie/Numero:" id="Serie/Numero:" class="form-control  font-weight-bold "  size="2">
+                    <option value="" class="font-weight-bold " >Seleccione</option>
+                    <option value="value" class="font-weight-bold ">COBRADA</option>
+                    <option value="value" class="font-weight-bold ">SIN COBRAR</option>
+                   
+                 </select>
+           </div>
+
+                 <div class="form-group col-md-4">
+                <label for="Creada por" class="text-light font-weight-bold ">Creada por</label>
+                <input type="text" name="Creada por"  class="form-control  font-weight-bold ">
+            </div>
+               <div class="form-group col-md-4">
+                <label for="Vendedor" class="text-light font-weight-bold ">Vendedor</label>
+                <input type="text" name="Vendedor"  class="form-control  font-weight-bold ">
+            </div>
+            </div>
+
+              </form>
+<br>
+              </div>
+</div>
+</div>
+</div>
+
+<br>
+</div>
+ <div class="container">
+  <div class="row">
+             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4  ">  
+     
+            <a href="" class="btn btn-primary btn-lg">General</a><br>
+            </div>
+
+               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4  ">  
+            <a href="" class="btn btn-primary btn-lg">Descriptiva</a>
+            </div>
+            </div>
+            </div>
+<br>
+            <div class="container">
+              <div class="row">
+            <br>
+      <div class="col-xl-12  col-lg-12 col-md-12 col-sm-12 col-12 bg-primary">
+       <br>
+         <div class="form-group row justify-content-center h-80">
+           <br> <input type="submit" value="Agregar+" class="btn btn-light btn-lg font-weight-bold">
+        </div> 
+          <form>
+          <div class="form-row">
+
+           <div class="form-group col-md-4">
+                <label for="Referencia" class="text-light font-weight-bold ">Referencia</label>
+                <input type="text" name="Referencia"  class="form-control  font-weight-bold ">
+            </div>
+             <div class="form-group col-md-4">
+                <label for="Nombre" class="text-light font-weight-bold ">Nombre</label>
+                <input type="text" name="nombre"  class="form-control  font-weight-bold ">
+            </div>
+             <div class="form-group col-md-4">
+                <label for="Descripcion" class="text-light font-weight-bold ">Descripcion</label>
+                <input type="text" name="Descripcion"  class="form-control  font-weight-bold ">
+            </div>
+             <div class="form-group col-md-4">
+                <label for=" Precio base" class="text-light font-weight-bold "> Precio base</label>
+                <input type="text" name=" Precio base"  class="form-control  font-weight-bold ">
+            </div>
+            <div class="form-group col-md-4">
+                <label for=" Unids" class="text-light font-weight-bold "> Unidades</label>
+                <input type="text" name=" Unids"  class="form-control  font-weight-bold ">
+            </div>
+                 <div class="form-group col-md-4">
+                <label for="Nombre" class="text-light font-weight-bold ">Nombre</label>
+                <input type="text" name="nombre"  class="form-control  font-weight-bold ">
+            </div>
+               <div class="form-group col-md-4">
+                <label for="Descuento" class="text-light font-weight-bold ">Descuento</label>
+                <input type="text" name="Descuento"  class="form-control  font-weight-bold ">
+            </div>
+               <div class="form-group col-md-4">
+                <label for="Impuesto" class="text-light font-weight-bold "> Impuesto</label>
+                <input type="text" name=" Impuesto"  class="form-control  font-weight-bold ">
+            </div>
+            </div>
+<div class="container">
+  <div class="row">
+             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4  ">  
+     
+            <a href="" class="btn btn-light btn-lg">Guardar</a><br>
+            </div>
+
+               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4  ">  
+            <a href="" class="btn btn-light btn-lg">Imprimir</a>
+            </div>
+            <br>
+            </div>
+            </div>
+              </form>
+<br>
+              </div>
+</div>
+</div>
+</div>
+<br>
+<footer>
+<nav class="navbar navbar-expand-md bg-danger navbar-dark">
+ <div class="col-sm-12 d-flex justify-content-center">
+<p class="text-light"><img src="../img/Marca.png" width="20" class="img-fluid" alt="Responsive image">Entrega tu confianza, con nosotros encontraras la diferencia</p>
+ <div>
+ </nav>
+</footer>
+
+
+
+
+
+
+
+</body>
+</hmtl>

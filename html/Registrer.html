@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+   <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+   
+<div id="login">
+    <br><br><br>
+       
+        <div class="container">
+            <div id="login-row" class="row justify-content-center align-items-center">
+                <div id="login-column" class="col-md-4 bg-primary">
+                    <div id="login-box" class="col-md-12 bg-primary">
+                       <form id="login-form" class="form" action="" method="post"> 
+                        <br>  
+                    <a href="../index.html" class="close">&times;</a>
+                     <img src="../img/loggin.png" width="100" height="80" class="img-fluid" alt="Responsive image"><br>
+                        <label for="Usuario"  class="text-light font-weight-bold lead ">Registro</label>
+                            <div class="form-group">
+                         <label for="Usuario"  class="text-light font-weight-bold ">Usuario</label>
+                         <input id="newUser" type="text" class="form-control mb-2 text-danger" placeholder="" value=""/>
+                         <label for="Usuario"  class="text-light font-weight-bold ">Contraseña</label>
+                         <input id="newPassword" type="password" class="form-control mb-2 text-danger" value=""/>
+                    
+                        <select id="category" class="form-control  font-weight-bold "  size="3" onchange="ddlselect();">
+                            <option selected="">Seleccionar Categoria</option>
+                            <option value="Administrador">Administrador</option>
+                            <option value="Invitado">Invitado</option>
+                        </select><br>
+                        
+                        <input type="text" id="txtvalue" hidden />
+
+
+                <div class="navbar navbar-expand-md  navbar-dark navbar-collapse justify-content-end">
+
+                <button type="submit" class="btn btn-danger font-weight-bold" onClick="store();">Entrar</button>  
+                </div> 
+             <br>
+  <br>
+                        </form>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+
+<script src="../js/app.js"></script>
+</html>

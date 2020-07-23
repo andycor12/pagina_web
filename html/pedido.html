@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PEDIDO</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    
+</head>
+<body>
+<nav class="navbar navbar-expand-md bg-danger navbar-dark navbar-collapse justify-content-end">
+    <ul class="navbar-nav">
+    <li class="nav-item active">
+     <a href="sesion.html" class="nav-link"><img src="../icono/usu.png" width="30" class="img-fluid" alt="Responsive image">Iniciar Sesión</a>
+      </li>
+	  <li class="nav-item active">
+     <a href="Registrer.html" class="nav-link"><img src="../icono/registro.png" width="30" class="img-fluid" alt="Responsive image">Registro</a>
+     </li>
+	  </ul>
+</nav>
+
+
+
+<nav class="navbar navbar-expand-md navbar-light bg-light">
+  <a class="col-sm-12 d-flex justify-content-center">
+     <img src="../img/logo.png" width="430" height="230" class="img-fluid" alt="Responsive image">
+  </a>
+</nav>
+<nav class="navbar navbar-expand-md bg-danger navbar-dark">
+ 
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="navbar-collapse collapse justify-content-center order-2" id="collapsibleNavbar">
+     <ul class="navbar-nav">
+     <li class="nav-item active">
+        <a class="nav-link" href="../index.html"><img src="../icono/casita.png" width="30" class="img-fluid" alt="Responsive image">Menu</a>
+      </li>
+       <li class="nav-item active">
+        <a class="nav-link" href="Gestion.html"><img src="../icono/gestion.png" width="30" class="img-fluid" alt="Responsive image">Gestion Farmaceutica</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="productos.html"><img src="../icono/producto.png" width="30" class="img-fluid" alt="Responsive image">Productos</a>
+      </li>
+     <li class="nav-item active">
+        <a class="nav-link" href="pedido.html"><img src="../icono/pedido.png" width="30" class="img-fluid" alt="Responsive image">Pedidos</a>
+      </li> 
+      <li class="nav-item active">
+        <a class="nav-link" href="Catalogo.html"><img src="../icono/catalogo.png" width="30" class="img-fluid" alt="Responsive image">Catalogo</a>
+      </li> 
+        <li class="nav-item active">
+        <a class="nav-link" href="factura.html"><img src="../icono/factura.png" width="25" class="img-fluid" alt="Responsive image">Factura</a>
+      </li>   
+       <li class="nav-item active">
+        <a class="nav-link" href="contactos.html"><img src="../icono/contacto.png" width="30" class="img-fluid" alt="Responsive image">Contactos</a>
+      </li>   
+      <li class="nav-item active">
+        <a class="nav-link" href="chat.html"><img src="../icono/avion.png" width="30" class="img-fluid" alt="Responsive image">Chats</a>
+      </li>  
+    </ul>
+  </div>  
+</nav>
+<br>
+<div class="container">
+        <div class="row">
+            <div class="col-xl-6  col-lg-6 col-md-6 col-sm-6 col-6 bg-primary">
+           <h1 class="row justify-content-center h-80 text-light "> Farmacia Cruz Roja</h1>
+              <p class="row justify-content-center h-80 font-weight-bold text-light ">Pedidos<p>
+              <div class="row justify-content-center h-80">
+               <img src="../img/Enfermera_2.png" width="180" height="10" class="img-fluid" alt="Responsive image">
+            </div>
+</div>
+
+
+            <div class="col-xl-6  col-lg-6 col-md-6 col-sm-6 col-6 bg-primary">
+                <br>
+<form>
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label for="Nombre" class="text-light font-weight-bold ">Nombre</label>
+                <input type="text" name="nombre"  class="form-control  font-weight-bold ">
+            </div>
+            <div class="form-group col-md-4">            
+                <label for="Apellido" class="text-light font-weight-bold ">Apellido</label>
+                <input type="text" name="Apellido"  class="form-control  font-weight-bold ">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="Edad" class="text-light font-weight-bold ">Edad</label>
+                <input type="text" name="Edad"  class="form-control  font-weight-bold ">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="fecha" class="text-light font-weight-bold ">Fecha de pedido</label>
+                <input type='date' class="form-control  font-weight-bold " />
+                   
+            </div>
+            <div class="form-group col-md-4">
+                <label for="Cedula" class="text-light font-weight-bold ">Cedula De Ciudadania</label>
+                <input type="text" name="Cedula"  class="form-control  font-weight-bold ">
+            </div>
+            <div class="form-group col-md-4">
+            <label for="Telefono:" class="text-light font-weight-bold ">Telefono</label>
+                <input type="text" name="Telefono:"  class="form-control  font-weight-bold ">
+               
+            </div>
+            <div class="form-group col-md-4">
+                <label for="Ciudad:" class="text-light font-weight-bold ">Ciudad:</label>
+                <select name="Serie/Numero:" id="Serie/Numero:" class="form-control  font-weight-bold "  size="2">
+                    <option value="" class="font-weight-bold " >Seleccione</option>
+                    <option value="value" class="font-weight-bold " >Soledad</option>
+			        <option value="value" class="font-weight-bold " >Baranoa</option> 
+		         	<option value="value" class="font-weight-bold " >Repelon</option>
+
+                </select>
+            </div>
+            <div class="form-group col-md-4">
+                <label for="¿Donde Vive?" class="text-light font-weight-bold ">¿Donde Vive?</label>
+               <select name="Serie/Numero:" id="Serie/Numero:" class="form-control  font-weight-bold "  size="2">
+                    <option value="" class="font-weight-bold " >Seleccione</option>
+                    
+                    <option value="value1" class="font-weight-bold " >Casa</option>
+			<option value="value1" class="font-weight-bold " >Apartamento</option>
+			<option value="value1" class="font-weight-bold " >Fuera de la ciudad</option> 
+                </select>
+            </div>
+            <div class="form-group col-md-4">
+                <label for="Dirección" class="text-light font-weight-bold ">Dirección</label>
+                <input type="text" name="Dirección"  class="form-control  font-weight-bold ">
+            </div>
+        </div> <!-- cierre de form-row -->
+        <!-- dejo fuera a submit -->
+        <div class="form-group row justify-content-center h-80">
+            <input type="submit" value="Enviar" class="btn btn-light btn-lg  font-weight-bold">
+        </div>
+    </form>
+</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div class="row justify-content-center h-80">
+     <h1  id="text-light">
+        PEDIDOS
+      </h1>
+      </div>
+<br>
+<div class="container">
+
+         <div class="row">
+  <div class="col-xl-9  col-lg-9 col-md-6 col-sm-7 col-7">
+   <h2 id="text-light">Gestion De Compras</h2>
+               <p id="text-light"> 
+		      La gestión de compras es uno de los ejes económicos más importantes de la oficina de farmacia,<br>
+	   puesto que conjuntamente con una política de trato profesional, agradable y personalizado influye<br>
+		directamente en la calidad de <a href="https://uploads-ssl.webflow.com/5bc62ba138b7300d418224c0/5bf8338090d3010ceaae1242_Atencion_mienvio.gif">servicio al cliente.</A>  En zonas donde existen varias farmacias en un <br>
+		radio relativamente reducido, si una persona no encuentra el producto deseado en el momento, se <br>
+		están perdiendo oportunidades de negocio, puesto que es bastante fácil dirigirse a otro <br>
+		establecimiento</p>
+  
+  </div>
+  <div class="col-xl-3 col-lg-3 col-md-6 col-sm-5 col-5">
+<div class="container h-80">
+<div class="row justify-content-center h-80">
+<br>
+ <img src="../img/farmacia1.jpg" width="240" class="img-fluid" alt="Responsive image">
+  
+ </div>
+</div>
+</div>
+<br>
+<div class="col-xl-12 col-sm-6">
+     
+ <h2 id="text-light">La oferta de servicios</h2>
+     <li>Los servicios asociados exclusivamente a receta que puede ofrecer una farmacia pueden ser:</li>
+        <ol>
+        <li>Los servicios asociados exclusivamente a receta que puede ofrecer una farmacia pueden ser:</li>
+		  <li>Control de glucosa y colesterol.</li>
+		  <li>Seguimiento farmacoterapéutico.</li>
+		  <li>Medición del pulso, presión arterial y monitorización ambulatoria de la presión arterial (MAPA).</li>
+		  <li>Formulación magistral.</li>
+		</ol>
+		
+	   <li>Prohibiciones del dispensador:</li>
+		
+        <ol>
+        <li>Los servicios asociados exclusivamente a receta que puede ofrecer una farmacia pueden ser:</li>
+		  <li>Cambiar el principio activo, concentración, forma farmacéutica, vía de administración, frecuencia,
+           cantidad y la dosis prescrita.</li>
+		  <li>Dispensar medicamentos alterados o fraudulentos.</li>
+		  <li>Recomendar a los usuarios la utilización de medicamentos.</li>
+		  <li>Tener muestras médicas de medicamentos.</li>
+		</ol>
+		
+
+	<li>Pueden anotarse también:</li>
+ <ol>
+		<li>El consumo medio mensual</li>
+		<li>Los niveles de stock: stock de seguridad, stock de rotación</li>
+		<li>Los otros sitios de almacenamiento.</li>
+		<li>Los pedidos en curso y su fecha.</li>
+
+	</ol>
+
+    </div>
+
+	  
+ <div class="container">
+<div class="row">
+  <div class="col-xl-9  col-lg-9 col-md-6 col-sm-7 col-7 bg-transparent">
+  <br>
+  
+               <p id="text-light"> 
+		      Centros Médicos, Dispensarios, Consultas Privadas. ­ Guarderías, Colegios, Institutos. ­ Empresas, Oficinas, Etc. ­ Bancos, Cajas. ­ Bares, Restaurantes. ­
+               Hogares De Jubilados, Centros Recreativos. ­ Paradas De Metro/Autobús/Tren.</p>
+  
+  </div>
+  <div class="col-xl-3 col-lg-3 col-md-6 col-sm-5 col-5">
+<div class="container h-80">
+<div class="row justify-content-center h-80">
+ 
+   <a href="" class="btn btn-danger btn-lg"><img src="../img/compra.png" width="60" class="img-fluid" alt="Responsive image">Imagenes</a>
+ 
+ </div>
+</div>
+</div>
+<br>
+ <div class="col-xl-12 col-sm-6">
+     <div class="col-sm-20 align-self-center text-center">
+               <h2 id="text-light">Organización Del Almacén</h2>
+               </div>
+               <p id="text-light">
+               Dentro Del Almacén Puede Optimizarse El Espacio Mediante La Creación De Altillos, Fijación De Estanterías Estándar Que Se Adapten Completamente A La Pared Y Estanterías Colocadas De Forma Similar A Las Grandes Superficies.Es Importante Tener En Cuenta Que En La Organización Del Espacio De Almacén, A Diferencia De En La Zona Abierta
+                Al Público, Prima La Operatividad Frente Al Diseño.
+		           </p>
+           </div>
+
+<div class="col-xl-12 col-sm-6">
+     <div class="col-sm-20 align-self-center text-center">
+               <h2 id="text-light">Inventario</h2>
+               </div>
+               <p id="text-light">
+               Antes De Cada Pedido Se Debe Realizar Un Inventario De Las Cantidadesreales En Stock Y 
+               Comprobación De Las Fechas De Caducidad. Las Fichas De Stock Dan Una Cifra Teórica Del Stock, 
+               Pero Se Debe Verificar, Producto Por Producto, Las Cantidades Realmente Disponibles (Stock Físico). 
+               Las Diferencias Pueden Ser Debidas A Errores En Las Cifras Anotadas O A Robos. Hay Que Aclarar, Por Supuesto, 
+               Estas Diferencias. Un Inventario Sólo Es Fácilmente Realizable En Una Farmacia Correctamente Ordenada. Es Una Operación Absolutamente Indispensable. 
+               Durante El Inventario, La Farmacia Debe Organizarse Para Que No Haya Ningún Movimiento De Stock. 
+		           </p>
+           </div>
+
+<div class="table-responsive">
+<table class="table table-condensed table-bordered table-hover">
+
+  <tr class="table-primary">
+		 <td rowspan="3"  class="font-weight-bold text-primary text-uppercase"><br><br><br>
+         Principales motivos para mantener
+			  un novel optimo de existencias</td>
+		  <td class="font-weight-bold text-primary text-uppercase">Caducidades</td>
+		  <td class="font-weight-bold text-primary text-uppercase">cambios de prescripción</td>
+		  </tr>
+		  <tr  class="table-primary">
+		  <td class="font-weight-bold text-primary text-uppercase">Bajadas de precio</td>
+		  <td class="font-weight-bold text-primary text-uppercase">Obsolescencia o deterioro</td>
+		  </tr>
+		  <tr  class="table-primary">
+		  <td class="font-weight-bold text-primary text-uppercase">Necesidaades de tesoreria</td>
+		  <td class="font-weight-bold text-primary text-uppercase">tener puntualidad</td>
+			  </tr> 
+          <tr class="table-primary">
+				  <td rowspan="3"  class="font-weight-bold text-primary text-uppercase"><br><br><br>
+                  Requisitos para recibir el producto</td>
+				  <td class="font-weight-bold text-primary text-uppercase">Mayor de edad</td>
+				  <td class="font-weight-bold text-primary text-uppercase">Cedula</td>
+				  </tr>
+				  <tr class="table-primary ">
+				  <td class="font-weight-bold text-primary text-uppercase">Historia clinica</td>
+				  <td class="font-weight-bold text-primary text-uppercase">2 Fotocopias de 150%</td>
+				  </tr>
+				  <tr class="table-primary">
+				  <td class="font-weight-bold text-primary text-uppercase">Carnet del eps</td>
+				  <td class="font-weight-bold text-primary text-uppercase">Telefono</td>
+				  </tr>
+			  </table>
+			</div>
+
+<div class="col-xl-12 col-sm-6">
+     <div class="col-sm-20 align-self-center text-center">
+               <h2 id="text-light">Control De Inventarios Por Códigode Barras</h2>
+               </div>
+               <p id="text-light">
+               El control de inventarios a través de códigos de barras y pedidos por módem (fig. 4) es el método más operativo y 
+                rápido, puesto que el ordenador genera automáticamente un prepedido cuando el stock se sitúa por debajo del límite
+                 de seguridad. El <a href="https://img.freepik.com/vector-gratis/personas-que-trabajan-farmacia-ilustrada_23-2148518514.jpg?size=626&ext=jpg">farmacéutico</a> sólo tiene que validar si está de acuerdo con las cantidades y productos que se 
+                 muestran en pantalla, o introducir las variaciones que considere oportunas. Automáticamente, una vez comprobado
+                el prepedido,se da la orden de pedido y éste es tramitado directamente al proveedor mediante módem.
+		           </p>
+           </div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<br>
+<footer>
+<nav class="navbar navbar-expand-md bg-danger navbar-dark">
+ <div class="col-sm-12 d-flex justify-content-center">
+<p class="text-light"><img src="../img/Marca.png" width="20" class="img-fluid" alt="Responsive image">Entrega tu confianza, con nosotros encontraras la diferencia</p>
+ <div>
+ </nav>
+</footer>
+
+
+
+
+
+
+
+</body>
+</hmtl>

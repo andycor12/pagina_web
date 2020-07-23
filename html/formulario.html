@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de pedido</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+   <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+   
+<div id="login">
+    <br>
+
+       
+        <div class="container">
+            <div id="login-row" class="row justify-content-center align-items-center">
+                <div id="login-column" class="col-md-4 bg-primary">
+                    <div id="login-box" class="col-md-12 bg-primary">
+                        
+      <form name="elige" action="#" id="form">
+              <a href="contactos.html" class="close">&times;</a>
+
+		<h1 id="formtext1" class="text-light  text-center">Formulario de pedido</h1>
+
+             
+		<label id="formtext1" class="text-light font-weight-bold text-center">	Elige Medicamento: </label><br>
+	     <select name="grupos" class="form-control  font-weight-bold "  size="3">
+            <option selected="">Seleccionar Medicamento</option>
+            <option value="1">Dolex</option>
+			<option value="2">Nimesulida</option>
+			<option value="3">Aspirina</option>
+			<option value="4">Diclofenaco</option>
+            <option value="5">Paracetamol</option>
+			<option value="6">Penicilamina</option>
+			<option value="7">Omeprazol</option>
+            <option value="8">Atorvastatina</option>
+			<option value="9">Lansoprazol</option>
+			<option value="10">Buscapina fem</option>
+           </select><BR>
+
+        <p class="text-light font-weight-bold text-center">Has elegido el medicamento</p>
+		<h4 id="respuesta" class="text-danger font-weight-bold text-center"></h4>
+		<p class="text-light font-weight-bold text-center">Numero de medicamento:</p>
+		<h4 id="respuesta3" class="text-danger font-weight-bold text-center"></h4>
+		<p class="text-light font-weight-bold text-center">Precio total:</p>
+		<h4 id="respuesta2" class="text-danger font-weight-bold text-center"></h4>
+     <div class="navbar navbar-expand-md  navbar-dark navbar-collapse justify-content-end">
+	<input type="button" name="pulsar" class="btn btn-danger font-weight-bold" id="btnIngresar" value="Calcular" onclick="escribe()" />
+    </div>
+        <div class="navbar navbar-expand-md  navbar-dark navbar-collapse justify-content-end">
+    <input type="submit" class="btn btn-danger font-weight-bold" name="submit" id="btnIngresar"value="Limpiar"> 
+    </div>
+   
+	  <br>
+      <br>
+</form>
+    
+    <script src="../js/script.js"></script>
+</body>
+</html>
